@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teepee HomePage</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="friendStyle.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="#">TeePee</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item">
+	        <a class="nav-link" href="#" onclick="closeNav()">Home</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#" onclick="openNav()">Browse</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          Create
+	        </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	          <a class="dropdown-item" href="#">Action</a>
+	          <a class="dropdown-item" href="#">Another action</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="#">Something else here</a>
+	        </div>
+	      </li>
+	      <li class="nav-item ">
+	        <a class="nav-link disabled" href="#">About</a>
+	      </li>
+	    </ul>
+	    <button id="myBtn" class="btn btn-outline-light mr-3">Login</button>
+	      <a class="btn btn-outline-light my-2 my-sm-0" href="FriendMe.html">Register</a>
+	     
+	  </div>
+	</nav>
+	<div class="container-fluid bg-dark sidebar sidenav" id="mySidenav">
+		<ul class="nav nav-tabs flex-column bg-dark" id="myTab" role="tablist">
+		  <li class="nav-item poop">
+		    <a class="nav-link bg-dark" id="item1" href="#home" aria-selected="false">Travel</a>
+		  </li>
+		  <li class="nav-item poop">
+		    <a class="nav-link bg-dark" id="item2" href="#profile"  aria-selected="false">Sport</a>
+		  </li>
+		  <li class="nav-item poop">
+		    <a class="nav-link bg-dark" id="item3" href="#contact"  aria-selected="false">Music</a>
+		  </li>
+		</ul>
+	</div>
+
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			 <div class="modal-body">
+		        <form>
+		          <div class="form-group">
+		            <label for="recipient-name" class="col-form-label">Recipient:</label>
+		            <input type="text" class="form-control" id="recipient-name">
+		          </div>
+		          <div class="form-group">
+		            <label for="message-text" class="col-form-label">Message:</label>
+		            <textarea class="form-control" id="message-text"></textarea>
+		          </div>
+		        </form>
+
+		      </div>
+				 <div class="modal-footer">
+			        <button type="button" class="btn btn-primary">Send message</button>
+			      </div>
+		</div>
+	</div>	
+
+	<div class="container ">
+		<ul class="cateInfo">
+			<li class="look "><a id="click1" class="hide"  href="#">For people who like to travel and go on adventures?</a></li>
+			<li  class="look "><a id="click2" class="hide" href="#">Fan of exercise? Why not do it with others.</a></li>
+			<li  class="look "><a id="click3" class="hide" href="#">Want to mellow out with some tunes, or head bang to some classics?</a></li>
+		</ul>
+		<!-- <ul>
+			<li id="poop1" class="poop">hey</li>		
+			<li id="poop12" class="poop">oops</li>		
+			<li id="poop3" class="poop">you</li>
+		</ul> -->
+
+
+
+	</div>
+
+			
+	<script type="text/javascript" src="friendscript.js"></script>
+</body>
+</html>
